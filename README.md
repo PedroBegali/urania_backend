@@ -10,24 +10,32 @@ Esta API gerencia o catálogo de **Categorias Educativas** e os **Flashcards Int
 ---
 
 ## 👨‍💻 Integrantes do Grupo (Turma 2TDSPA)
-* * **Denise Santos** — RM: 567559
-* * **Lucas Dudena** — RM: 567600
-* * **Karen Cardoso** — RM: 566870
-* * **Pedro Begali** — RM: 567478
+- **Denise Santos** — RM: 567559
+- **Lucas Dudena** — RM: 567600
+- **Karen Cardoso** — RM: 566870
+- **Pedro Begali** — RM: 567478
 
 ---
 
 ## 🛠️ Tecnologias e Arquitetura Utilizadas
-* **Java 17+ / 21**
-* **Spring Boot 3** (`Spring Web`, `Spring Data JPA`, `Spring Validation`)
-* **Banco de Dados:** H2 Database / Oracle Database
-* **Documentação Interativa:** Springdoc OpenAPI 3 (Swagger UI)
-* **Arquitetura em Camadas:**
-    * `domainmodel.entities`: Entidades JPA (`Categoria` e `Flashcard`) com relacionamento `1:N`.
-    * `datasource.repositories`: Repositórios Spring Data JPA com *Query Methods* para busca textual.
-    * `services`: Regras de negócio desacopladas em interfaces e implementações (`ServiceImpl`).
-    * `resources` e `dtos`: Endpoints RESTful documentados e validados com Bean Validation.
-    * `infrastructure`: Carga automática de dados para teste (`DataLoader`), configuração OpenAPI (`OpenApiConfig`) e tratamento global de exceções (`GlobalExceptionHandler`).
+- **Java 17+ / 21**
+- **Spring Boot 3** (`Spring Web`, `Spring Data JPA`, `Spring Validation`)
+- **Banco de Dados:** H2 Database / Oracle Database
+- **Documentação Interativa:** Springdoc OpenAPI 3 (Swagger UI)
+- **Arquitetura em Camadas:**
+  - `domainmodel.entities`: Entidades JPA (`Categoria` e `Flashcard`) com relacionamento `1:N`.
+  - `datasource.repositories`: Repositórios Spring Data JPA com *Query Methods* para busca textual.
+  - `services`: Regras de negócio desacopladas em interfaces e implementações (`ServiceImpl`).
+  - `resources` e `dtos`: Endpoints RESTful documentados e validados com Bean Validation.
+  - `infrastructure`: Carga automática de dados para teste (`DataLoader`), configuração OpenAPI (`OpenApiConfig`) e tratamento global de exceções (`GlobalExceptionHandler`).
+
+---
+
+## 🎥 Demonstração em Vídeo (Swagger e H2 Database)
+
+Para conferir a API em pleno funcionamento, incluindo as rotas mapeadas na interface interativa do Swagger e a persistência inicial dos dados via H2 Database, assista ao nosso vídeo de evidências:
+
+▶️ **[Clique aqui para assistir ao vídeo de demonstração](https://youtu.be/uBLofpMqIUo)**
 
 ---
 
@@ -35,5 +43,5 @@ Esta API gerencia o catálogo de **Categorias Educativas** e os **Flashcards Int
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/PedroBegali/urania_backend.git
+   git clone [https://github.com/PedroBegali/urania_backend.git](https://github.com/PedroBegali/urania_backend.git)
    cd uraniaquest-backend
