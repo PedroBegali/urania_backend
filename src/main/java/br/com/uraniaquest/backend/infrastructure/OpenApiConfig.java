@@ -17,7 +17,7 @@ public class OpenApiConfig {
                         .version("1.0.0")
                         .description("API RESTful de apoio à plataforma educativa UrâniaQuest, voltada à divulgação científica dos benefícios da tecnologia nuclear.")
                         .contact(new Contact()
-                                .name("Equipa UrâniaQuest - FIAP 2TDS")
-                                .url("https://github.com/")));
+                                .name("Equipe UrâniaQuest - FIAP 2TDSPA")
+                                .url("https://github.com/PedroBegali/urania_backend")));
     }
 }
