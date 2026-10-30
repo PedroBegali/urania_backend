@@ -35,5 +35,5 @@ Esta API gerencia o catálogo de **Categorias Educativas** e os **Flashcards Int
 
 1. Clone este repositório:
    ```bash
-   git clone <URL_DO_SEU_REPOSITORIO>
+   git clone <https://github.com/PedroBegali/urania_backend>
    cd uraniaquest-backend
