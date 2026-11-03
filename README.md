@@ -39,9 +39,49 @@ Para conferir a API em pleno funcionamento, incluindo as rotas mapeadas na inter
 
 ---
 
-## 🚀 Como Executar o Projeto
+## 🚀 Como Executar o Projeto (Passo a Passo)
 
-1. Clone este repositório:
-   ```bash
-   git clone [https://github.com/PedroBegali/urania_backend.git](https://github.com/PedroBegali/urania_backend.git)
-   cd uraniaquest-backend
+### Pré-requisitos
+Certifique-se de ter o **Java 17** (ou superior) instalado no seu computador. 
+
+### Opção A: Executando de forma visual via IDE (Recomendado para Leigos)
+1. **Baixe o projeto:** Clique no botão verde "Code" no topo desta página e selecione **"Download ZIP"**. Extraia a pasta no seu computador.
+2. Abra a sua IDE de preferência (IntelliJ IDEA, Eclipse ou VS Code).
+3. Selecione a opção **"Open"** (Abrir) e selecione a pasta `uraniaquest-backend` que você acabou de extrair.
+4. Aguarde alguns segundos enquanto a IDE baixa as dependências automaticamente.
+5. No painel de arquivos (geralmente à esquerda), navegue até: `src` ➔ `main` ➔ `java` ➔ `br.com.uraniaquest.backend` ➔ e abra o arquivo **`BackendApplication.java`**.
+6. Clique no botão de **Play (▶️)** verde ao lado da linha de código `public class BackendApplication` para iniciar o servidor.
+
+### Opção B: Executando via Terminal (Prompt de Comando)
+1. Abra o terminal na pasta raiz do projeto.
+2. Digite o seguinte comando e aperte Enter:
+   - **No Windows:** `mvnw.cmd spring-boot:run`
+   - **No Mac/Linux:** `./mvnw spring-boot:run`
+
+### Acessando a Aplicação
+Independentemente da opção escolhida, após o terminal exibir a mensagem indicando que o Tomcat foi iniciado (geralmente *"Started BackendApplication in X seconds"*), **clique no link abaixo para testar a aplicação no seu navegador:**
+
+👉 **[Acessar Interface do Swagger (http://localhost:8080/swagger-ui.html)](http://localhost:8080/swagger-ui.html)**
+
+*(Nota: O banco de dados já vem com dados pré-cadastrados para facilitar o seu teste).*
+
+---
+
+## 🔗 Principais Endpoints da API
+
+### Categorias (`/api/categorias`)
+* `GET /api/categorias` — Lista todas as categorias educativas.
+* `GET /api/categorias/{id}` — Busca uma categoria específica por ID.
+* `GET /api/categorias/pesquisa?termo={texto}` — Busca categorias por texto (Query Method).
+* `POST /api/categorias` — Cadastra uma nova categoria (com validação `@Valid`).
+* `PUT /api/categorias/{id}` — Atualiza os dados de uma categoria existente.
+* `DELETE /api/categorias/{id}` — Remove uma categoria.
+
+### Flashcards (`/api/flashcards`)
+* `GET /api/flashcards` — Lista todos os flashcards cadastrados.
+* `GET /api/flashcards/{id}` — Busca um flashcard por ID.
+* `GET /api/flashcards/categoria/{categoriaId}` — Lista os flashcards de uma categoria específica.
+* `GET /api/flashcards/pesquisa?termo={texto}` — Busca flashcards contendo o termo no enunciado (Query Method).
+* `POST /api/flashcards` — Cadastra um novo flashcard de múltipla escolha.
+* `PUT /api/flashcards/{id}` — Atualiza um flashcard existente.
+* `DELETE /api/flashcards/{id}` — Remove um flashcard.
